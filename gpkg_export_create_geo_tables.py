@@ -8,7 +8,7 @@ from pathlib import Path
 from decouple import config
 
 # connection details
-host = "130.238.10.179"
+host = "(INSERT)"
 username = "urdar_daemon"
 dbname = "urdar_overseer"
 password = config("PASS")

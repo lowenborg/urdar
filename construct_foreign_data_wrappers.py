@@ -30,7 +30,7 @@ def create_fdw():
         with con.cursor() as cur:
             cur.execute(
                 """
-            CREATE SERVER IF NOT EXISTS {0} FOREIGN DATA WRAPPER postgres_fdw OPTIONS (host '130.238.10.179', dbname '{0}', port '5432');
+            CREATE SERVER IF NOT EXISTS {0} FOREIGN DATA WRAPPER postgres_fdw OPTIONS (host '(INSERT)', dbname '{0}', port '5432');
             DROP SCHEMA IF EXISTS {0} CASCADE;
             CREATE SCHEMA {0};
             IMPORT FOREIGN SCHEMA public FROM SERVER {0} INTO {0};

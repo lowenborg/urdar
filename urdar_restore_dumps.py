@@ -109,7 +109,7 @@ pq_restore = Path("C:/Program Files/PostgreSQL/12/bin>pg_restore")
 shell_commands = []
 for dump in all_dumps:
     shell_commands.append(
-        "pg_restore -h 130.238.10.179 -p 5432 -U urdar_daemon -d "
+        "pg_restore -h (INSERT) -p 5432 -U urdar_daemon -d "
         + re.search(r"(?<=DBackup\\)(.*)(?=\.)", dump).group(0).lower()
         + " -c -w -O -x --no-security-labels "
         + str(full_path)
