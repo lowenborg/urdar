@@ -1,0 +1,1 @@
+ALTER TABLE temp_geo_objects_attribute_arrays add gid serial primary key
